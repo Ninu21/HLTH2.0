@@ -30,6 +30,14 @@ var swiper = new Swiper(".home-slider", {
     },
 });
 
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+  dropdown.addEventListener('click', () => {
+    dropdown.querySelector('ul').classList.toggle('show');
+  });
+});
+
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     grabCursor: true,
@@ -72,3 +80,26 @@ var swiper = new Swiper(".blogs-slider", {
         },
     },
 });
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    navText: [
+      "<i class='fa fa-caret-left'></i>",
+      "<i class='fa fa-caret-right'></i>"
+    ],
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })

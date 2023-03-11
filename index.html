@@ -26,7 +26,7 @@
 <header class="header">
     <img src="weblogo.jpeg" class="hello">
 
-    <div class="drawer">
+    <!-- <div class="drawer">
         <div class="drawer-content">
             <a href="#home">home</a>
             <a href="#about">about</a>
@@ -36,27 +36,29 @@
         <button onclick="openDrawer()">Open Drawer</button>
 
       </div>
-      <button onclick="openDrawer()">Open Drawer</button>
+      <button onclick="openDrawer()">Open Drawer</button> -->
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <ul>features
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
+       
             <li class = "dropdown">
                 <a href="#features">features</a>
                 <ul>
+                    <li><a href="#gyms">Gyms near me</a></li>
                     <li><a href="#workout">workout</a></li>
+                    <li><a href="#shopping">Supplement shopping</a></li>
                     <li><a href="#trainers">trainers</a></li>
                     <li><a href="#diet-plans">Diet Plans</a></li>
+                
+                    <li><a href="calorie/calorie.html" target="_blank"class="navbar">Calorie Counter</a></li>
                 </ul>
             </li>
-        </ul>
-        <a href="calorie/calorie.html" target="_blank"class="navbar">Calorie Counter</a>
-        <a href="./login.html">Login</a>
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="./login.html">Login</a>
+        <!-- <a href="calorie/calorie.html" target="_blank"class="navbar">Calorie Counter</a> -->
+        
         <!-- <a href="#workout">workout</a>
         
         <a href="#trainers">trainers</a>
@@ -140,19 +142,28 @@
                 <p>Strength does not come from physical capacity. It comes from an indomitable will</p>
             </div>
         </div>
-        <a href="#" class="btn">read more</a>
+        <!-- <a href="#" class="btn">read more</a> -->
     </div>
 
 </section>
 
 <!-- about section ends -->
+
+<!-- gyms near me starts -->
+
 <section class="gyms" id="gyms">
-    <iframe
+
+    <h1 class="heading"> <span>Gyms near me</span> </h1>
+
+    <!-- <iframe
   width="600"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/search?client=opera&hs=j5m&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AJOqlzUx7VkSXb_v1pozPhRN-DX7Q8w6qA:1678557959042&q=gyms+near+me&rflfq=1&num=10&ved=2ahUKEwjSuYjXu9T9AhWi-GEKHSDMD1kQtgN6BAgOEAc#rlfi=hd:;si:;mv:[[18.541886128399202,74.06836212180177],[18.453652514667027,73.87987792990724],null,[18.49777500376949,73.9741200258545],13]">
-</iframe>
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA2okGQFWCEKpdzWJT37pBR1rIVi2aJ60E&q=Empire+State+Building+New+York">
+</iframe> -->
+<div class="gyms">
+  <img src="images/gyms near  me.png" alt="">
+</div>
 
 </section>
 <!-- features section starts  -->
@@ -204,6 +215,58 @@
 </section>
 
 <!-- features section ends -->
+
+<!-- Supplement Shopping starts -->
+<section class="shopping" id="shopping">
+
+<h1 class="heading"> <span>Supplement Shopping</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="image">
+            <img src="images/shop/1.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/icon-1.png" alt="">
+            <h3>NitroTech Whey</h3>
+            <p></p>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwi5jreD19T9AhX_kmYCHWnrBwUYABAPGgJzbQ&sig=AOD64_0mUv30DsfujDk3MYP95TJU3hC8KQ&adurl&ctype=5&ved=2ahUKEwivxa6D19T9AhXmptgFHX2EC8cQvhd6BQgBEKMB"
+             target="_blank" class="btn">Click Here</a>
+        </div>
+    </div>
+
+    <div class="box second">
+        <div class="image">
+            <img src="images/shop/2.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/icon-2.png" alt="">
+            <h3>O.N. Gold Whey</h3>
+            <p></p>
+            <a href="https://healthxp.in/healthxp/products/on-optimum-nutrition-gold-standard-100-whey-protein-2-lb-by-bright-commodities?sku_id=37367434&gclid=Cj0KCQiA6rCgBhDVARIsAK1kGPLEryMDhY-gAlvh8cGCQiQ47DI2oRCpjWSXLUCUKcLw8a_VDPyxWNkaAphoEALw_wcB" 
+             target="_blank"class="btn">Click Here</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/shop/3.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/icon-3.png" alt="">
+            <h3>IN2 Isolate whey</h3>
+            <p></p>
+            <a href="https://sourceofsupplements.com"  target="_blank"class="btn">Click Here</a>
+        </div>
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- Supplement Shopping ends -->
 
 <!-- trainers section starts  -->
 

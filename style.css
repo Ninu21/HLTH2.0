@@ -125,6 +125,37 @@ section {
   background-color: #fff;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
 
 #menu-btn {
   font-size: 3rem;
@@ -234,6 +265,9 @@ section {
   padding-right: 1.5rem;
   color: rgb(0, 255, 13);
 }
+.gyms .gyms{
+ text-align: center;
+}
 
 .workout .box-container {
   display: grid;
@@ -276,6 +310,55 @@ section {
   color: rgb(17, 255, 0);
 }
 .workout .box-container .box .content p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+/* shop */
+
+.shopping .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+  gap: 0;
+}
+.shopping .box-container .box {
+  background: #111;
+}
+.shopping .box-container .box.second {
+  display: flex;
+  flex-flow: column-reverse;
+}
+.shopping .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.shopping .box-container .box .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.shopping .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shopping .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+.shopping .box-container .box .content img {
+  height: 9rem;
+  margin-bottom: 1rem;
+  filter: invert(1);
+}
+.shopping .box-container .box .content h3 {
+  font-size: 2rem;
+  color: rgb(17, 255, 0);
+}
+.shopping .box-container .box .content p {
   line-height: 2;
   font-size: 1.5rem;
   color: #aaa;
